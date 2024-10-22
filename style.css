@@ -39,6 +39,11 @@ body{
     animation: slideTop .5s ease forwards;
     animation-delay: calc(.2s *var(--i)) ;
 }
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Align navbar items to the right */
+    align-items: center;
+}
 .navbar a:hover{
     color: #0ef;
 }
