@@ -44,8 +44,104 @@ body{
     justify-content: flex-end; /* Align navbar items to the right */
     align-items: center;
 }
+
+.navbar a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background 0.3s, color 0.3s;
+    position: relative;
+}
+
+.navbar a.active {
+    
+    color: #fff;
+    border-radius: 5px;
+}
 .navbar a:hover{
     color: #0ef;
+}
+/* Common section styling */
+section {
+    padding: 60px 10%;
+    background-color: #111;
+    color: #ededed;
+    text-align: left;
+}
+
+/* Skills section */
+.skills {
+    background-color: #333;
+}
+
+.about {
+    background-color: #333;
+}
+
+/* Education section */
+.education {
+    background-color: #444;
+}
+
+.details {
+    background-color: #444;
+    margin: 0 auto;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.label {
+    font-weight: bold;
+    flex-basis: 40%;
+}
+
+.value {
+    flex-basis: 60%;
+}
+
+
+
+/* Contact section */
+.contact {
+    background-color: #333;
+}
+
+/* Section headings */
+section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+    }
 }
 .home{
     position: relative;
@@ -127,8 +223,9 @@ body{
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
-    box-shadow: 0 0 5px #0ef,
-    0 0 25px #0ef,
+    box-shadow: 0 0 5px #0ef;
+    cursor: pointer;
+    
 }
 .btn-box:hover{
     box-shadow: 0 0 5px cyan,
